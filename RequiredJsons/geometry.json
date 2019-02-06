@@ -1,0 +1,27 @@
+{
+  "rawGeometries":
+  [
+    {
+      "type" : "rectangle",
+      "vertexDataX" : [0, 2],
+      "vertexDataY" : [0, 1]
+    },
+    {
+      "type" : "rectangle",
+      "vertexDataX" : [2, 4],
+      "vertexDataY" : [1, 2]
+    },
+    {
+      "type" : "triangle",
+      "vertexDataX" : [2, 3, 2],
+      "vertexDataY" : [0, 1, 1]
+    },
+    {
+      "type" : "triangle",
+      "vertexDataX" : [1, 2, 2],
+      "vertexDataY" : [1, 1, 2]
+    }
+    
+  ]
+}
+

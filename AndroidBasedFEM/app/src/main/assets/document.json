@@ -1,0 +1,136 @@
+{
+    "rawGeometries":
+        [
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "0",
+                    "1",
+                    "1"
+                ],
+                "vertexDataY": [
+                    "0",
+                    "0",
+                    "1"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "0",
+                    "1",
+                    "0"
+                ],
+                "vertexDataY": [
+                    "0",
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "1",
+                    "2",
+                    "2"
+                ],
+                "vertexDataY": [
+                    "0",
+                    "0",
+                    "1"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "1",
+                    "2",
+                    "1"
+                ],
+                "vertexDataY": [
+                    "0",
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "2",
+                    "3",
+                    "3"
+                ],
+                "vertexDataY": [
+                    "1",
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "2",
+                    "3",
+                    "2"
+                ],
+                "vertexDataY": [
+                    "1",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "3",
+                    "4",
+                    "4"
+                ],
+                "vertexDataY": [
+                    "1",
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "3",
+                    "4",
+                    "3"
+                ],
+                "vertexDataY": [
+                    "1",
+                    "2",
+                    "2"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "2",
+                    "3",
+                    "2"
+                ],
+                "vertexDataY": [
+                    "0",
+                    "1",
+                    "1"
+                ]
+            },
+            {
+                "type": "triangle",
+                "vertexDataX": [
+                    "1",
+                    "2",
+                    "2"
+                ],
+                "vertexDataY": [
+                    "1",
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/layout_resultsmodal">
+
+    <TextView
+        android:id="@+id/Coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="my_best_text"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/minDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/maxDisp"
+        android:layout_marginStart="40dp"
+        android:text="left"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnSelectEntity"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:drawableStart="@drawable/ic_action_pan"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/maxDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:text="rigth"
+        android:textSize="11dp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnCenterView"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnSelectEntity"
+        android:drawableStart="@drawable/ic_action_center"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnFrequencyUp"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/excitationFrequency"
+        android:layout_alignParentStart="true"
+        android:drawableStart="@android:drawable/arrow_up_float"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnFrequencyDown"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelectEntity"
+        android:layout_alignParentStart="true"
+        android:drawableStart="@android:drawable/arrow_down_float"
+        android:textSize="11dp" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar_scaling"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnSelectEntity"
+        android:max="1000"
+        android:paddingTop="10dp"
+        android:progress="100"
+        android:rotation="0" />
+
+    <TextView
+        android:id="@+id/scalingFactor"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_scaling"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:text="Scaling"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/excitationFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFrequencyDown"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:text="0.0Hz" />
+
+</RelativeLayout>

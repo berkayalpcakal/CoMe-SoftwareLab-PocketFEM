@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/layout_boundaryconditions">
+
+    <Button
+        android:id="@+id/btnSelectEntityBC"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:drawableStart="@drawable/ic_action_pan"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnCenterViewBC"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnSelectEntityBC"
+        android:drawableStart="@drawable/ic_action_center"
+        android:textSize="11dp" />
+
+
+    <Button
+        android:id="@+id/btnApproveBoundaryConditions"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:drawableEnd="@drawable/ic_check_black_40dp"
+        android:textSize="11dp" />
+
+
+    <Button
+        android:id="@+id/btnAddConstraintX"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Fix in X" />
+
+    <Button
+        android:id="@+id/btnAddConstraintY"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnAddConstraintX"
+        android:text="Fix in Y"/>
+
+    <Button
+        android:id="@+id/btnAddForceY"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnAddConstraintY"
+        android:text="Force Y" />
+
+    <Button
+        android:id="@+id/btnAddForceX"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnAddForceY"
+        android:text="Force X" />
+    
+</RelativeLayout>

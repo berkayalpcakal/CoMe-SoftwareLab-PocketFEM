@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_addmaterial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_popupAddMaterialName"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Material Name:"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editText_popupAddMaterialName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="NewMaterial"
+        android:textSize="15dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_materialYoungs"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/tv_popupAddMaterialName"
+        android:layout_below="@+id/tv_popupAddMaterialName"
+        android:gravity="center"
+        android:text="Young's Modulus:"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editText_popupAddMaterialYoungs"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_popupAddMaterialName"
+        android:text="2000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_materialPoissons"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/tv_popupAddMaterialName"
+        android:layout_below="@+id/tv_materialYoungs"
+        android:gravity="center"
+        android:text="Poissons' Ratio:"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editText_popupAddMaterialPoissons"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText_popupAddMaterialYoungs"
+        android:text="0.3"
+        android:textSize="15dp" />
+</RelativeLayout>

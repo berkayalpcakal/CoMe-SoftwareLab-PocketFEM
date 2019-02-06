@@ -1,0 +1,9 @@
+{
+  "material":
+  {
+    "YoungsModulus":69000000000,
+    "PoissonsRatio":0.33,
+    "Thickness":0.1
+  }
+  
+}

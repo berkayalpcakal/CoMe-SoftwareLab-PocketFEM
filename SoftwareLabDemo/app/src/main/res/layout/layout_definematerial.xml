@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/layout_definegeometry">
+
+    <NumberPicker
+        android:id="@+id/pickerMaterial"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:solidColor="@android:color/darker_gray" />
+
+
+    <Button
+        android:id="@+id/btnSaveMaterial"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/ic_action_save" />
+
+    <Button
+        android:id="@+id/btnAddMaterial"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:drawableStart="@drawable/ic_library_add_black_24dp" />
+
+    <Button
+        android:id="@+id/btnDeleteMaterial"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnAddMaterial"
+        android:drawableStart="@drawable/ic_action_clear" />
+
+    <TextView
+        android:id="@+id/textViewMaterialData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDummyLine"
+        android:text="\n    Young's Modulus: \n    Poisson's Ratio: "
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewDummyLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pickerMaterial"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="\nProperties of Selected Material;" />
+
+
+
+</RelativeLayout>

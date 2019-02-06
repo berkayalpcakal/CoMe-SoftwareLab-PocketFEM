@@ -1,0 +1,28 @@
+{
+  "meshedGeometry":
+  {
+    "numberOfVerex" : 3,
+    "elements" : 
+    [
+      {
+        "type" : "triangle",
+        "vertexDataX" : [0.5, 0.5, 0.75],
+        "vertexDataY" : [0,   0.5, 0.25]
+      },
+      
+      {
+        "type" : "triangle",
+        "vertexDataX" : [0.5, 0.5, 0.75],
+        "vertexDataY" : [0,   0.5, 0.25]
+      },
+      
+      {
+        "type" : "triangle",
+        "vertexDataX" : [0.5, 0.5, 0.75],
+        "vertexDataY" : [0,   0.5, 0.25]
+      }
+    ]
+
+  }
+  
+}

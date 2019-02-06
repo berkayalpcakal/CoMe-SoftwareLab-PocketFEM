@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/layout_solve">
+
+
+    <Button
+        android:id="@+id/btnSolveFEM"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_alignTop="@+id/textViewSummaryStaticSolve"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:text="STATIC Analysis"
+        android:textSize="11dp" />
+
+
+    <TextView
+        android:id="@+id/textViewSummaryStaticSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:text="\nSummary;  " />
+
+
+    <Button
+        android:id="@+id/btnSolveModal"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Modal Analysis"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textView_numOfEigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_frequencies"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Num Of Eigenvalues: " />
+
+    <TextView
+        android:id="@+id/textView_frequencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/editText_fmin"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignParentStart="true"
+        android:text="fmin  | fmax | num of f" />
+
+    <EditText
+        android:id="@+id/editText_fmin"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/checkBox_damping"
+        android:layout_alignParentStart="true"
+        android:text="0"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editText_fmax"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/checkBox_damping"
+        android:layout_toEndOf="@+id/editText_fmin"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="100"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editText_numOfF"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/checkBox_damping"
+        android:layout_toEndOf="@+id/editText_fmax"
+        android:text="100"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editText_numOfEigen"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_numOfEigen"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/textView_numOfEigen"
+        android:text="10"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_damping"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Damping"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_damping1"
+        android:layout_alignBaseline="@+id/checkBox_damping"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/checkBox_damping"
+        android:text="D1: "
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.05"
+        android:id="@+id/editText_damping1"
+        android:layout_alignBaseline="@id/textView_damping1"
+        android:layout_toEndOf="@id/textView_damping1"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_damping2"
+        android:layout_alignBaseline="@+id/textView_damping1"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/editText_damping1"
+        android:text="D2: "
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.05"
+        android:id="@+id/editText_damping2"
+        android:layout_alignBaseline="@id/textView_damping1"
+        android:layout_toEndOf="@id/textView_damping2"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
